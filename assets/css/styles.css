@@ -43,9 +43,8 @@ body{
 }
 
 
-.navbar-brand img{
-    height: 40px;
-    width: 257px;
+.navbar-brand img {
+    width: 150px; /* Adjust the logo size */
 }
 
 .nav-link:hover{
@@ -56,11 +55,16 @@ body{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
+.carousel-item h1, .carousel-item h2{
+    color: var(--cyan-blue) !important;
+}
+
 
 
 /* header  */
 #header{
     background: url(../images/banner/banner-img-1.jpg) top/cover no-repeat;
+    padding-top: 104px;
 }
 
 .carousel-inner h1{
@@ -200,5 +204,11 @@ footer a:hover{
 @media(min-width: 992px){
     .nav-item{
         border-bottom: none;
+    }
+}
+@media(min-width: 768px){
+    .navbar-brand img {
+        height: 30px;
+        width: 200px;
     }
 }
