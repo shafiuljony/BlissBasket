@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eCommerce blissbasket">
+    <link rel="icon" href="assets/images/icon/favicon.png" type="image/svg+xml">
+    <title>BlissBasket</title>
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./vendor/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand order-lg-0" href="index.html">
+                <img src="./assets/images/logo/logo-color-on-transparent-background.png" alt="logo" class="img-fluid">
+            </a>
+
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button title="search" type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <button title="menu" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="text-uppercase text-dark nav-link" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="text-uppercase text-dark nav-link" href="#collection">Collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="text-uppercase text-dark nav-link" href="#special">Specials</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="text-uppercase text-dark nav-link" href="#popular">Popular</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="text-uppercase text-dark nav-link" href="#blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="text-uppercase text-dark nav-link" href="#about">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- <section class="py-5 " id="breadcrumb">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+            </ol>
+        </nav>
+    </section> -->
+
+       
+
+    <!-- faq section  -->
+    
+   
+   <!-- FAQ section -->
+   <section id="faq" class="py-5">
+    <div class="container">
+        <h2 class="text-center pb-5">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        How To buy a Product?
+                    </button>
+                </h3>
+                <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can by products from add to cart
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                        What Kind of Products are available?
+                    </button>
+                </h3>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can buy all kinds of products from here
+                    </div>
+                </div>
+            </div>
+             <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                        Payment Method?
+                    </button>
+                </h3>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can pay by cash on delivery
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </div>
+</section>
+<!-- End of FAQ section -->
+
+     <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white gx-5">
+                <div class="col-md-6 col-lg-3">
+                    <a title="home" class="footer-logo" href="index.html">
+                        <img src="./assets/images/logo/logo-white-on-transparent-background.png" alt="logo" class="img-fluid ">
+                    </a>
+                    <p class="text-white opacity-1 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae quia modi perspiciatis dolor vero sint aperiam hic repudiandae. Aliquam, nostrum pariatur error dolor sint quae vel doloremque eveniet in.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="">
+                        <h5 class="fw-light">Links</h5>
+                        <ul class="list-unstyled ">
+                            <li class="my-3">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fas fa-chevron-right me-1"></i> Home
+                                </a>
+                            </li>
+                            <li class="my-3">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fas fa-chevron-right me-1"></i> Collection
+                                </a>
+                            </li>
+                            <li class="my-3">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fas fa-chevron-right me-1"></i> Specials
+                                </a>
+                            </li>
+                            <li class="my-3">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fas fa-chevron-right me-1"></i> Popular
+                                </a>
+                            </li>
+                            <li class="my-3">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fas fa-chevron-right me-1"></i> Blogs
+                                </a>
+                            </li>
+                            <li class="my-3">
+                                <a href="#" class="text-white text-decoration-none">
+                                    <i class="fas fa-chevron-right me-1"></i> About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Us</h5>
+                    <div class="d-flex justify-content-start my-2 ">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            46, 1st Floor, 7th Cross, 1st Main, BTM Layout 2nd Stage, GPO-4200
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start my-2 ">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            blissbasket.support@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start my-2 ">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            +880 155 894 7938
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div class="d-flex">
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a title="facebook" href="#" class="text-white text-decoration-none fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="twitter" href="#" class="text-white text-decoration-none fs-4 me-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="instagram"  href="#" class="text-white text-decoration-none fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="pinterest" href="#" class="text-white text-decoration-none  fs-4 me-4">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <!-- end of footer  -->
+
+      <!-- bootstrap js -->
+      <script src="./vendor/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+      <!-- custom js  -->
+      <!-- <script src="./assets/js/script.js"></script> -->
+  </body>
+  </html>

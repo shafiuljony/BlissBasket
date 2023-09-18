@@ -55,9 +55,193 @@ body{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
+/* Add this CSS to your stylesheet */
+.navbar-nav a {
+    position: relative; /* Make the <a> element a relative container for the pseudo-element */
+    text-decoration: none; /* Remove the default underline */
+}
+
+.navbar-nav a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust the height of the underline as needed */
+    background-color: var(--pink); /* Add your desired border color */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Add a transition for smooth animation */
+}
+
+.navbar-nav a:hover::before {
+    width: 100%; /* Expand the width to 100% on hover */
+}
+
 .carousel-item h1, .carousel-item h2{
     color: var(--cyan-blue) !important;
 }
+.cart-container {
+    position: relative;
+    z-index: 1;
+}
+
+#cart-toggle {
+    cursor: pointer;
+}
+
+.quick-cart {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Initially hidden to the right */
+    width: 300px; /* Adjust to your preferred width */
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+.quick-cart.active {
+    right: 0; /* Slide in from the right */
+}
+
+#cart-toggle {
+    cursor: pointer;
+}
+
+.quick-cart {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling if needed */
+}
+
+#cart-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--pink);
+}
+
+.quick-cart h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-items li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cart-items img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.item-details h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.cart-items p {
+    margin: 0;
+}
+
+p.total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#checkout-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#checkout-button:hover {
+    background-color: #0056b3;
+}
+
+/* Existing CSS styles for quick cart */
+
+.product-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-info h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--pink); /* You can change the color as desired */
+}
+/* styles.css */
+/* Your existing styles for the navigation bar */
+
+/* Hide the search container initially */
+#search-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 400px; /* Initial width */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease-in-out;
+}
+
+#searchInput {
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+
 
 
 
@@ -100,9 +284,19 @@ body{
     color: #fff !important;
     border-color: var(--pink) !important;
 }
+.product {
+    transition: opacity 0.5s ease;
+}
 .filter-button-group .btn:hover{
     color: #fff !important;
 }
+.collection-img img{
+    transition: all 0.3s ease;
+ }
+ .collection-img:hover img{
+     transform: scale(1.2);
+     cursor: pointer;
+ }
 .collection-img span{
     top: 20px;
     right: 20px;
@@ -197,6 +391,14 @@ footer a{
 footer a:hover{
     color: var(--pink) !important;
 }
+
+#faq{
+    margin: 100px 0
+}
+
+/* #breadcrumb{
+    margin-top: 100px;
+} */
 
 
 /* media queries  */
