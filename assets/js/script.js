@@ -51,35 +51,35 @@
         showProducts("featured");
     });
 
-    //mini cart
+    // Mini Cart Functionality
     const cartToggle = document.getElementById('cart-toggle');
     const quickCart = document.querySelector('.quick-cart');
     const cartClose = document.getElementById('cart-close');
 
-    cartToggle.addEventListener('click', function () {
+    function toggleCart() {
         quickCart.classList.toggle('active');
-    });
-    cartClose.addEventListener('click', function () {
-        quickCart.classList.remove('active');
-    });
+    }
 
+    cartToggle.addEventListener('click', toggleCart);
+    cartClose.addEventListener('click', () => quickCart.classList.remove('active'));
 
-    //Search 
+    // Search Functionality
     const searchContainer = document.getElementById('search-container');
     const searchToggle = document.getElementById('search-toggle');
     const searchInput = document.getElementById('searchInput');
 
-    // Add a click event listener to toggle the search bar
-    searchToggle.addEventListener('click', function () {
+    function toggleSearch() {
         if (searchContainer.style.display === 'none' || searchContainer.style.display === '') {
             // Show the search container and focus on the input
             searchContainer.style.display = 'block';
-            searchContainer.style.transition = 'all 0.5s ease';
             searchInput.focus();
         } else {
             // Hide the search container and blur the input
             searchContainer.style.display = 'none';
             searchInput.blur();
         }
-    });
+    }
+
+    searchToggle.addEventListener('click', toggleSearch);
+
 });

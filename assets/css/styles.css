@@ -54,8 +54,6 @@ body{
 .nav-item{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
-
-/* Add this CSS to your stylesheet */
 .navbar-nav a {
     position: relative; /* Make the <a> element a relative container for the pseudo-element */
     text-decoration: none; /* Remove the default underline */
@@ -180,8 +178,6 @@ p.total {
     background-color: #0056b3;
 }
 
-/* Existing CSS styles for quick cart */
-
 .product-info {
     display: flex;
     gap: 10px;
@@ -201,10 +197,6 @@ p.total {
     cursor: pointer;
     color: var(--pink); /* You can change the color as desired */
 }
-/* styles.css */
-/* Your existing styles for the navigation bar */
-
-/* Hide the search container initially */
 #search-container {
     display: none;
     position: absolute;
@@ -407,10 +399,13 @@ footer a:hover{
     .nav-item{
         border-bottom: none;
     }
-}
+}   
 @media(min-width: 768px){
     .navbar-brand img {
         height: 30px;
         width: 200px;
     }
+    /* .navbar-nav a:hover::before {
+        width: 0; /* Expand the width to 100% on hover
+    } */
 }
